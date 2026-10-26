@@ -1,6 +1,13 @@
-__pycache__/
-*.py[cod]
-.venv/
-server/replays/
-server/replay-cache/
-*.log
+# 忽略 Godot 編輯器快取
+.godot/
+.autoconverted/
+
+# 忽略二進位編譯成品與封裝包
+*.exe
+*.pck
+*.zip
+*.bak*
+
+# 忽略本機修圖/暫存工具目錄
+_cardcheck/
+guild-server-backup-*/
