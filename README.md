@@ -13,8 +13,9 @@
 * **統一規則核心**：客戶端與伺服器共用同一套規則模組（`guild_card_corrections`），杜絕單人與聯機判定不一致的問題。
 
 ### 2. 🎨 全面更新美術圖檔
-* 全面升級角色立繪、場景插畫與道具圖示，提供更高清晰度的視覺享受。
+* 全面升級角色立繪、場景插畫與道具圖示，提供更直覺便利的操作。
 * 保留經典漫畫紙面復古質感與斜切邊框設計，畫面層次更加精緻。
+* 將**冒險者的慶典**擴充卡牌移植到台版卡片，維持卡片風格一致。
 
 ### 3. 🖼️ 卡面全面統一為實體掃描圖 (Scan-based Cards)
 * **告別 OCR 殘字問題**：全數更換為官方實體卡牌高清掃描圖，徹底解決過往動態文字套版時發生的「框內殘字」、「外框殘留」以及「雙重印刷」的重疊顯示問題。
@@ -68,15 +69,13 @@
 
 ## 🚀 執行與安裝說明
 
-### 直接遊玩（免編譯）
+### 經過godot編譯exe（exe檔過大無法上傳github，須將原始檔Export）
 1. 至 Release 下載打包檔案並解壓縮。
-2. 保持 `GuildMaster.exe` 與下列檔案處於同一目錄下：
-   - `GuildMaster.pck`
-   - `art/`
-   - `rules/`
-   - `runtime/`
-   - `LICENSES/`
-3. 執行 `GuildMaster.exe` 即可開始遊戲。
+2. 使用 Godot 4.7.2 開啟 GuildMaster-Godot-src/project.godot。
+3. 點選功能表 Project -> Export...（專案已內置配置好的 export_presets.cfg）。
+4. 點擊 Export Project 匯出為 GuildMaster.exe（與 GuildMaster.pck）。
+5. 將產出的檔案與 art/、rules/、runtime/ 放在同目錄下即可直接運行。
+6. 執行 `GuildMaster.exe` 即可開始遊戲。
 
 ### 開發者構建 (From Source)
 * 本專案源碼使用 **Godot 4.7.2** 製作，可使用 Godot Editor 開啟 `GuildMaster-Godot-src/project.godot`。
