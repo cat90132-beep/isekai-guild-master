@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>异世界公会长 · 对局回放</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body><header><div><small>ISEKAI GUILD MASTER</small><h1>公会回放与战绩</h1></div><nav><a href="#archive">今日对局</a><a href="#statistics">胜率统计</a><a href="#viewer">完整回放</a></nav></header>
+<section id="archive" class="dashboard"><div class="row"><div><h2>对局档案</h2><p class="hint">按北京时间的开局日期查看，获胜者以原游戏最终排名为准。</p></div><button id="refresh">刷新</button></div>
+<div class="filters"><label>日期 <input id="match-date" type="date"></label><button id="today">今天</button><button id="all-days">全部日期</button><label>状态 <select id="match-status"><option value="">全部状态</option><option>进行中</option><option>已结束</option><option>已中断</option></select></label><label class="search">搜索 <input id="match-search" type="search" placeholder="房间、公会长或角色"></label></div>
+<div id="daily-summary" class="metrics" aria-live="polite"></div><p id="archive-status" class="hint" role="status"></p></section>
+<section id="statistics" class="dashboard"><div class="row"><div><h2>位次与角色胜率</h2><p id="statistics-note" class="hint">仅计已结束的多人对局；并列第一各记一胜。</p></div><div class="filters"><label>范围 <select id="stats-period"><option value="all">全部日期</option><option value="selected">所选日期</option></select></label><label>人数 <select id="stats-players"><option value="">所有多人对局</option><option value="2">2人</option><option value="3">3人</option><option value="4">4人</option><option value="5">5人</option></select></label></div></div>
+<p id="statistics-status" class="hint" role="status"></p><div class="statistics-grid"><article><h3>开局行动顺位</h3><div id="position-stats"></div></article><article><h3>角色 · 黑白版本分别统计</h3><div id="hero-stats" class="hero-stat-list"></div></article></div></section>
+<main id="viewer"><aside><div class="row"><h2>对局预览</h2><span id="match-count"></span></div><div id="matches">正在加载…</div><button id="more-matches" hidden>显示更多</button></aside>
+<section class="workspace"><div class="row"><h2 id="title">选择一场对局</h2><span id="phase"></span></div><p id="status" role="status">对局开始后自动记录，结束或服务器重启后仍可查看。</p>
+<div class="table"><svg id="map" viewBox="0 0 840 680" role="img" aria-label="当前步骤的迷宫地图"></svg><div id="side"><div id="legend"></div><div id="shared"></div></div></div>
+<h3 class="section-title">全体公会 · 看板娘 / 手牌 / 板块 / 发展</h3>
+<p class="hint">回放完整保留每一席的私人信息：手牌、保留情报、私人王权、私人板块与已发展项目。</p>
+<div id="players" class="players"></div>
+<div class="timeline"><div class="row"><button id="prev" disabled>← 上一步</button><button id="play" disabled>播放</button><button id="next" disabled>下一步 →</button><button id="last" disabled>查看结局</button><label>速度 <select id="speed"><option value="2000">慢速</option><option value="1200" selected>正常</option><option value="600">快速</option></select></label><output id="step">0 / 0</output></div><input id="slider" type="range" min="0" max="0" value="0" disabled aria-label="回放步骤"><p id="event">尚未选择回放</p></div>
+<details><summary>此时的公会记录</summary><ol id="log"></ol></details></section></main>
+<div id="lightbox" hidden role="dialog" aria-modal="true" aria-label="卡牌大图"><div class="lightbox-inner"><p id="lightbox-title"></p><img id="lightbox-img" alt=""><button id="lightbox-close" type="button" aria-label="关闭大图">×</button></div></div>
+</body></html>

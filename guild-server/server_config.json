@@ -1,0 +1,10 @@
+{
+  "_note": "服务器配置文件。修改后重启 server.py 生效；命令行参数会覆盖这里的设置。",
+  "host": "0.0.0.0",
+  "game_port": 6677,
+  "replay_port": 6767,
+  "site_port": 6680,
+  "record_replays": true,
+  "enable_replay": true,
+  "enable_site": true
+}
