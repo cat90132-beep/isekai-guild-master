@@ -1,0 +1,36 @@
+GDRE Tools v2.7.4
+Windows 10.0.26200, headless
+Opening file: D:/Users/Simon/Desktop/GuildMaster-Godot-Windows-20261015-A077Fix/GuildMaster-Godot/GuildMaster.pck
+Loaded 56 imported files
+Detected Engine Version: 4.7.2
+Detected Bytecode Revision: 4.5.0-stable (ebc36a7)
+Successfully loaded PCK!
+Version: 4.7.2
+Verified 123 files, no errors detected!
+Extracted 123 files, no errors detected!
+Saved project config.
+
+
+********************************EXPORT REPORT********************************
+
+Totals:                                 
+Decompiled scripts:                     18
+Scripts not decompiled:                 0
+Imported resources for export session:  56
+Successfully converted:                 56
+Lossy:                                  23
+Rewrote metadata:                       37
+Non-importable conversions:             0
+Not converted:                          0
+Failed conversions:                     0
+-------------
+
+
+
+------------------------------------------------------------------------------------
+
+Use Godot editor version 4.7.2 to edit the project.
+
+*******************************************************************************
+
+Recovery finished in 00m00s
